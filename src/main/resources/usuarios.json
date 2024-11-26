@@ -1,0 +1,17 @@
+[
+  {
+    "matricula": "21212121k21",
+    "contrasena": "1234",
+    "tipo": "estudiante"
+  },
+  {
+    "matricula": "admin123",
+    "contrasena": "adminpass",
+    "tipo": "administrador"
+  },
+  {
+    "matricula": "21212121211",
+    "contrasena": "101010",
+    "tipo": "estudiante"
+  }
+]

@@ -1,0 +1,242 @@
+{"logias": [
+    {
+        "ubicacion": "Piso 2",
+        "disponibilidad": {
+            "TARDE_2": "OCUPADA",
+            "TARDE_1": "DISPONIBLE",
+            "TARDE_3": "DISPONIBLE",
+            "MAÑANA_1": "DISPONIBLE",
+            "MAÑANA_2": "RESERVADA"
+        },
+        "idLogia": "1",
+        "capacidad": 3
+    },
+    {
+        "ubicacion": "Piso 2",
+        "disponibilidad": {
+            "TARDE_2": "DISPONIBLE",
+            "TARDE_1": "DISPONIBLE",
+            "TARDE_3": "DISPONIBLE",
+            "MAÑANA_1": "DISPONIBLE",
+            "MAÑANA_2": "DISPONIBLE"
+        },
+        "idLogia": "2",
+        "capacidad": 3
+    },
+    {
+        "ubicacion": "Piso 2",
+        "disponibilidad": {
+            "TARDE_2": "DISPONIBLE",
+            "TARDE_1": "DISPONIBLE",
+            "TARDE_3": "DISPONIBLE",
+            "MAÑANA_1": "DISPONIBLE",
+            "MAÑANA_2": "DISPONIBLE"
+        },
+        "idLogia": "3",
+        "capacidad": 3
+    },
+    {
+        "ubicacion": "Piso 2",
+        "disponibilidad": {
+            "TARDE_2": "DISPONIBLE",
+            "TARDE_1": "DISPONIBLE",
+            "TARDE_3": "DISPONIBLE",
+            "MAÑANA_1": "DISPONIBLE",
+            "MAÑANA_2": "DISPONIBLE"
+        },
+        "idLogia": "4",
+        "capacidad": 3
+    },
+    {
+        "ubicacion": "Piso 2",
+        "disponibilidad": {
+            "TARDE_2": "DISPONIBLE",
+            "TARDE_1": "DISPONIBLE",
+            "TARDE_3": "DISPONIBLE",
+            "MAÑANA_1": "DISPONIBLE",
+            "MAÑANA_2": "DISPONIBLE"
+        },
+        "idLogia": "5",
+        "capacidad": 5
+    },
+    {
+        "ubicacion": "Piso 2",
+        "disponibilidad": {
+            "TARDE_2": "DISPONIBLE",
+            "TARDE_1": "DISPONIBLE",
+            "TARDE_3": "DISPONIBLE",
+            "MAÑANA_1": "DISPONIBLE",
+            "MAÑANA_2": "DISPONIBLE"
+        },
+        "idLogia": "6",
+        "capacidad": 5
+    },
+    {
+        "ubicacion": "Piso 2",
+        "disponibilidad": {
+            "TARDE_2": "DISPONIBLE",
+            "TARDE_1": "DISPONIBLE",
+            "TARDE_3": "DISPONIBLE",
+            "MAÑANA_1": "DISPONIBLE",
+            "MAÑANA_2": "DISPONIBLE"
+        },
+        "idLogia": "7",
+        "capacidad": 5
+    },
+    {
+        "ubicacion": "Piso 2",
+        "disponibilidad": {
+            "TARDE_2": "DISPONIBLE",
+            "TARDE_1": "DISPONIBLE",
+            "TARDE_3": "DISPONIBLE",
+            "MAÑANA_1": "DISPONIBLE",
+            "MAÑANA_2": "DISPONIBLE"
+        },
+        "idLogia": "8",
+        "capacidad": 5
+    },
+    {
+        "ubicacion": "Piso 2",
+        "disponibilidad": {
+            "TARDE_2": "DISPONIBLE",
+            "TARDE_1": "DISPONIBLE",
+            "TARDE_3": "DISPONIBLE",
+            "MAÑANA_1": "DISPONIBLE",
+            "MAÑANA_2": "DISPONIBLE"
+        },
+        "idLogia": "9",
+        "capacidad": 7
+    },
+    {
+        "ubicacion": "Piso 2",
+        "disponibilidad": {
+            "TARDE_2": "DISPONIBLE",
+            "TARDE_1": "DISPONIBLE",
+            "TARDE_3": "DISPONIBLE",
+            "MAÑANA_1": "DISPONIBLE",
+            "MAÑANA_2": "DISPONIBLE"
+        },
+        "idLogia": "10",
+        "capacidad": 7
+    },
+    {
+        "ubicacion": "Piso 3",
+        "disponibilidad": {
+            "TARDE_2": "DISPONIBLE",
+            "TARDE_1": "DISPONIBLE",
+            "TARDE_3": "DISPONIBLE",
+            "MAÑANA_1": "DISPONIBLE",
+            "MAÑANA_2": "DISPONIBLE"
+        },
+        "idLogia": "1",
+        "capacidad": 3
+    },
+    {
+        "ubicacion": "Piso 3",
+        "disponibilidad": {
+            "TARDE_2": "DISPONIBLE",
+            "TARDE_1": "DISPONIBLE",
+            "TARDE_3": "DISPONIBLE",
+            "MAÑANA_1": "DISPONIBLE",
+            "MAÑANA_2": "DISPONIBLE"
+        },
+        "idLogia": "2",
+        "capacidad": 3
+    },
+    {
+        "ubicacion": "Piso 3",
+        "disponibilidad": {
+            "TARDE_2": "DISPONIBLE",
+            "TARDE_1": "DISPONIBLE",
+            "TARDE_3": "DISPONIBLE",
+            "MAÑANA_1": "DISPONIBLE",
+            "MAÑANA_2": "DISPONIBLE"
+        },
+        "idLogia": "3",
+        "capacidad": 3
+    },
+    {
+        "ubicacion": "Piso 3",
+        "disponibilidad": {
+            "TARDE_2": "DISPONIBLE",
+            "TARDE_1": "DISPONIBLE",
+            "TARDE_3": "DISPONIBLE",
+            "MAÑANA_1": "DISPONIBLE",
+            "MAÑANA_2": "DISPONIBLE"
+        },
+        "idLogia": "4",
+        "capacidad": 5
+    },
+    {
+        "ubicacion": "Piso 3",
+        "disponibilidad": {
+            "TARDE_2": "DISPONIBLE",
+            "TARDE_1": "DISPONIBLE",
+            "TARDE_3": "DISPONIBLE",
+            "MAÑANA_1": "DISPONIBLE",
+            "MAÑANA_2": "DISPONIBLE"
+        },
+        "idLogia": "5",
+        "capacidad": 5
+    },
+    {
+        "ubicacion": "Piso 3",
+        "disponibilidad": {
+            "TARDE_2": "DISPONIBLE",
+            "TARDE_1": "DISPONIBLE",
+            "TARDE_3": "DISPONIBLE",
+            "MAÑANA_1": "DISPONIBLE",
+            "MAÑANA_2": "DISPONIBLE"
+        },
+        "idLogia": "6",
+        "capacidad": 7
+    },
+    {
+        "ubicacion": "Piso 3",
+        "disponibilidad": {
+            "TARDE_2": "DISPONIBLE",
+            "TARDE_1": "DISPONIBLE",
+            "TARDE_3": "DISPONIBLE",
+            "MAÑANA_1": "DISPONIBLE",
+            "MAÑANA_2": "DISPONIBLE"
+        },
+        "idLogia": "7",
+        "capacidad": 7
+    },
+    {
+        "ubicacion": "Piso 3",
+        "disponibilidad": {
+            "TARDE_2": "DISPONIBLE",
+            "TARDE_1": "DISPONIBLE",
+            "TARDE_3": "DISPONIBLE",
+            "MAÑANA_1": "DISPONIBLE",
+            "MAÑANA_2": "DISPONIBLE"
+        },
+        "idLogia": "8",
+        "capacidad": 5
+    },
+    {
+        "ubicacion": "Piso 3",
+        "disponibilidad": {
+            "TARDE_2": "DISPONIBLE",
+            "TARDE_1": "DISPONIBLE",
+            "TARDE_3": "DISPONIBLE",
+            "MAÑANA_1": "DISPONIBLE",
+            "MAÑANA_2": "DISPONIBLE"
+        },
+        "idLogia": "9",
+        "capacidad": 7
+    },
+    {
+        "ubicacion": "Piso 3",
+        "disponibilidad": {
+            "TARDE_2": "DISPONIBLE",
+            "TARDE_1": "DISPONIBLE",
+            "TARDE_3": "DISPONIBLE",
+            "MAÑANA_1": "DISPONIBLE",
+            "MAÑANA_2": "DISPONIBLE"
+        },
+        "idLogia": "10",
+        "capacidad": 7
+    }
+]}

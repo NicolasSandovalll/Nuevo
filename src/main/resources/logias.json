@@ -2,11 +2,11 @@
     {
         "ubicacion": "Piso 2",
         "disponibilidad": {
-            "TARDE_2": "OCUPADA",
+            "TARDE_2": "DISPONIBLE",
             "TARDE_1": "DISPONIBLE",
             "TARDE_3": "DISPONIBLE",
             "MAÑANA_1": "DISPONIBLE",
-            "MAÑANA_2": "RESERVADA"
+            "MAÑANA_2": "DISPONIBLE"
         },
         "idLogia": "1",
         "capacidad": 3

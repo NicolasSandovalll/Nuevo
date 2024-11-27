@@ -7,18 +7,18 @@ public enum TramoHora {
     TARDE_2("14:00 - 16:00"),
     TARDE_3("16:00 - 18:00");
 
-    private final String rango;
+    private final String range;
 
-    TramoHora(String rango) {
-        this.rango = rango;
+    TramoHora(String range) {
+        this.range = range;
     }
 
-    public String getRango() {
-        return this.rango;
+    public String getRange() {
+        return this.range;
     }
 
     @Override
     public String toString() {
-        return rango;
+        return range;
     }
 }

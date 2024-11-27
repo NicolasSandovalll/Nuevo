@@ -10,7 +10,7 @@
     </Appenders>
 
     <Loggers>
-        <Logger name="servicios.AuthService" level="info" additivity="false">
+        <Logger name="servicios.ServicioAutenticacion" level="info" additivity="false">
             <AppenderRef ref="AuthFile"/>
         </Logger>
         <Root level="debug">

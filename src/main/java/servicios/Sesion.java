@@ -4,8 +4,8 @@ import dominio.Usuario;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class Session {
-    private static final Logger logger = LoggerFactory.getLogger(Session.class);
+public class Sesion {
+    private static final Logger logger = LoggerFactory.getLogger(Sesion.class);
     private static Usuario usuario;
 
     public static synchronized Usuario getUsuario() {
@@ -17,7 +17,7 @@ public class Session {
             logger.warn("Intento de establecer una sesión con un usuario nulo.");
             throw new IllegalArgumentException("El usuario no puede ser nulo.");
         }
-        Session.usuario = usuario;
+        Sesion.usuario = usuario;
         logger.info("Sesión iniciada para el usuario con matrícula: {}", usuario.getMatricula());
     }
 

@@ -13,26 +13,26 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LogiaHandler {
-    private static final Logger logger = LoggerFactory.getLogger(LogiaHandler.class);
-    private final String filePath;
+public class ManejadorLogias {
+    private static final Logger logger = LoggerFactory.getLogger(ManejadorLogias.class);
+    private final String rutaArchivo;
     private final List<Logia> logias;
 
-    public LogiaHandler(String filePath) {
-        this.filePath = filePath;
+    public ManejadorLogias(String rutaArchivo) {
+        this.rutaArchivo = rutaArchivo;
         this.logias = new ArrayList<>();
-        loadLogias();
+        cargarLogias();
     }
 
-    public void loadLogias() {
-        try (FileReader reader = new FileReader(filePath)) {
-            StringBuilder stringBuilder = new StringBuilder();
+    public void cargarLogias() {
+        try (FileReader reader = new FileReader(rutaArchivo)) {
+            StringBuilder contenido = new StringBuilder();
             int i;
             while ((i = reader.read()) != -1) {
-                stringBuilder.append((char) i);
+                contenido.append((char) i);
             }
 
-            JSONObject jsonObject = new JSONObject(stringBuilder.toString());
+            JSONObject jsonObject = new JSONObject(contenido.toString());
             JSONArray jsonLogias = jsonObject.getJSONArray("logias");
 
             for (int j = 0; j < jsonLogias.length(); j++) {
@@ -50,7 +50,7 @@ public class LogiaHandler {
         }
     }
 
-    public void actualizarDisponibilidad(int piso, String idLogia, TramoHora tramoHora, String nuevoEstado) {
+    public void actualizarDisponibilidad(int piso, String idLogia, TramoHora tramoHorario, String nuevoEstado) {
         if (!nuevoEstado.equalsIgnoreCase("DISPONIBLE")
                 && !nuevoEstado.equalsIgnoreCase("RESERVADA")
                 && !nuevoEstado.equalsIgnoreCase("OCUPADA")) {
@@ -60,16 +60,16 @@ public class LogiaHandler {
         String pisoStr = "Piso " + piso;
         for (Logia logia : logias) {
             if (logia.getUbicacion().equalsIgnoreCase(pisoStr) && logia.getIdLogia().equals(idLogia)) {
-                logia.getDisponibilidad().put(tramoHora.name(), nuevoEstado.toUpperCase());
-                saveLogias();
+                logia.getDisponibilidad().put(tramoHorario.name(), nuevoEstado.toUpperCase());
+                guardarLogias();
                 return;
             }
         }
-        throw new IllegalArgumentException("Logia no encontrada en Piso " + piso + " con ID: " + idLogia);
+        throw new IllegalArgumentException("No se encontró una logia en el piso " + piso + " con el ID: " + idLogia);
     }
 
-    public void saveLogias() {
-        try (FileWriter writer = new FileWriter(filePath)) {
+    public void guardarLogias() {
+        try (FileWriter writer = new FileWriter(rutaArchivo)) {
             JSONArray jsonArray = new JSONArray();
             for (Logia logia : logias) {
                 JSONObject jsonLogia = new JSONObject();
@@ -88,12 +88,12 @@ public class LogiaHandler {
         }
     }
 
-    public List<Logia> obtenerLogiasDisponibles(int piso, int capacidadMinima, TramoHora tramoHora) {
+    public List<Logia> obtenerLogiasDisponibles(int piso, int capacidadMinima, TramoHora tramoHorario) {
         List<Logia> logiasDisponibles = new ArrayList<>();
         String pisoStr = "Piso " + piso;
 
         for (Logia logia : logias) {
-            String estado = logia.getDisponibilidad().getString(tramoHora.name());
+            String estado = logia.getDisponibilidad().getString(tramoHorario.name());
             if (logia.getUbicacion().equalsIgnoreCase(pisoStr)
                     && logia.getCapacidad() >= capacidadMinima
                     && estado.equalsIgnoreCase("DISPONIBLE")) {
@@ -106,8 +106,8 @@ public class LogiaHandler {
     public List<Logia> obtenerLogiasPorEstado(String estado) {
         List<Logia> logiasFiltradas = new ArrayList<>();
         for (Logia logia : logias) {
-            for (String tramo : logia.getDisponibilidad().keySet()) {
-                if (logia.getDisponibilidad().getString(tramo).equalsIgnoreCase(estado)) {
+            for (String tramoHorario : logia.getDisponibilidad().keySet()) {
+                if (logia.getDisponibilidad().getString(tramoHorario).equalsIgnoreCase(estado)) {
                     logiasFiltradas.add(logia);
                     break; // Evita agregar la misma logia varias veces.
                 }
@@ -123,8 +123,8 @@ public class LogiaHandler {
         for (Logia logia : logias) {
             if (!logia.getUbicacion().equalsIgnoreCase(pisoStr)) continue;
 
-            for (String tramo : logia.getDisponibilidad().keySet()) {
-                if (logia.getDisponibilidad().getString(tramo).equalsIgnoreCase(estado)) {
+            for (String tramoHorario : logia.getDisponibilidad().keySet()) {
+                if (logia.getDisponibilidad().getString(tramoHorario).equalsIgnoreCase(estado)) {
                     logiasFiltradas.add(logia);
                     break; // Evita agregar la misma logia varias veces.
                 }

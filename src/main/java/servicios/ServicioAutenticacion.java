@@ -1,16 +1,16 @@
 package servicios;
 
-import datos.JSONHandler;
+import datos.ManejadorJson;
 import dominio.Administrador;
 import dominio.Estudiante;
 import dominio.Usuario;
 import org.json.JSONObject;
 
-public class AuthService {
-    private JSONHandler jsonHandler;
+public class ServicioAutenticacion {
+    private ManejadorJson jsonHandler;
 
-    public AuthService(String filePath) {
-        this.jsonHandler = new JSONHandler(filePath);
+    public ServicioAutenticacion(String filePath) {
+        this.jsonHandler = new ManejadorJson(filePath);
     }
 
     public Usuario autenticarUsuario(String matricula, String contrasena) {

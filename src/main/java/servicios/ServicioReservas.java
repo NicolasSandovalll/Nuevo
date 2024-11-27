@@ -123,7 +123,4 @@ public class ServicioReservas {
         manejadorReservas.cancelarReservaPorId(idReserva);
         logger.info("Reserva cancelada a través del servicio: {}", idReserva);
     }
-
-
-
 }

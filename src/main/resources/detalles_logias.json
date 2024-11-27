@@ -1,0 +1,26 @@
+[
+  {
+    "minimoMiembros": 3,
+    "sillas": 4,
+    "mesa": "Mesa para 4 personas",
+    "televisor": 1,
+    "pizarron": 1,
+    "computador": 1
+  },
+  {
+    "minimoMiembros": 5,
+    "sillas": 6,
+    "mesa": "Mesa para 6 personas",
+    "televisor": 1,
+    "pizarron": 1,
+    "computador": 1
+  },
+  {
+    "minimoMiembros": 7,
+    "sillas": 8,
+    "mesa": "Mesa para 8 personas",
+    "televisor": 1,
+    "pizarron": 1,
+    "computador": 1
+  }
+]
